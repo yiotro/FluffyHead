@@ -161,6 +161,7 @@ public class TasksActivity extends AppCompatActivity {
     void onTaskDelete(Task task) {
         myDbHandler.deleteTask(task);
         sendBroadcastToUpdateWidget();
+        refreshViews();
         refreshEmptySign();
     }
 
@@ -168,6 +169,7 @@ public class TasksActivity extends AppCompatActivity {
     void onTaskAdd(Task task) {
         myDbHandler.addTask(task);
         sendBroadcastToUpdateWidget();
+        refreshViews();
         refreshEmptySign();
     }
 
@@ -175,6 +177,7 @@ public class TasksActivity extends AppCompatActivity {
     void onTaskEdit(Task task) {
         myDbHandler.editTask(task);
         sendBroadcastToUpdateWidget();
+        refreshViews();
         refreshEmptySign();
         Log.d("yiotro", myDbHandler.databaseToString());
     }

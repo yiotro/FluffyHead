@@ -12,6 +12,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -99,11 +100,8 @@ public class NotesActivity extends AppCompatActivity {
 
 
     void refreshViews() {
-//        adapter.clear();
-//        adapter.addAll(taskController.getTasks());
         adapter.notifyDataSetChanged();
-//        listView.invalidateViews();
-//        listView.refreshDrawableState();
+        Log.d("yiotro", "refresh notes");
     }
 
 
@@ -142,12 +140,14 @@ public class NotesActivity extends AppCompatActivity {
 
     void onNoteDelete(Note note) {
         myDbHandler.deleteNote(note);
+        refreshViews();
         refreshEmptySign();
     }
 
 
     void onNoteAdd(Note note) {
         myDbHandler.addNote(note);
+        refreshViews();
         refreshEmptySign();
     }
 

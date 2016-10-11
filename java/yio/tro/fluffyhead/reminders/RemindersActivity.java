@@ -170,18 +170,21 @@ public class RemindersActivity extends AppCompatActivity {
         myDbHandler.deleteReminder(reminder);
 
         updateAllAlarms();
+        refreshViews();
         refreshEmptySign();
     }
 
 
     void onReminderAdd(Reminder reminder) {
         myDbHandler.addReminder(reminder);
+        refreshViews();
         refreshEmptySign();
     }
 
 
     void onReminderEdit(Reminder reminder) {
         myDbHandler.editReminder(reminder);
+        refreshViews();
         refreshEmptySign();
     }
 
