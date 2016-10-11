@@ -10,15 +10,22 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_notes"
-        tools:context="yio.tro.fluffyhead.NotesActivity">
+        tools:context=".notes.NotesActivity">
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_view_notes"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Notes"
-            android:id="@+id/textView3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/note_list_is_empty"
+            android:id="@+id/note_empty"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"/>
 </RelativeLayout>

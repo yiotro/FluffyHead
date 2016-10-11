@@ -8,6 +8,9 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
+import yio.tro.fluffyhead.notes.NotesActivity;
+import yio.tro.fluffyhead.reminders.RemindersActivity;
+import yio.tro.fluffyhead.tasks.TasksActivity;
 
 public class NavigationListener implements NavigationView.OnNavigationItemSelectedListener {
 

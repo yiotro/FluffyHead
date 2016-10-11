@@ -4,17 +4,10 @@
 
     <header
             android:fragment="yio.tro.fluffyhead.SettingsActivity$GeneralPreferenceFragment"
-            android:title="@string/pref_header_general"
-            android:icon="@drawable/ic_info_black_24dp"/>
+            android:title="@string/pref_header_general"/>
 
     <header
-            android:fragment="yio.tro.fluffyhead.SettingsActivity$NotificationPreferenceFragment"
-            android:title="@string/pref_header_notifications"
-            android:icon="@drawable/ic_notifications_black_24dp"/>
-
-    <header
-            android:fragment="yio.tro.fluffyhead.SettingsActivity$DataSyncPreferenceFragment"
-            android:title="@string/pref_header_data_sync"
-            android:icon="@drawable/ic_sync_black_24dp"/>
+            android:fragment="yio.tro.fluffyhead.SettingsActivity$AboutPreferenceFragment"
+            android:title="@string/pref_header_about"/>
 
 </preference-headers>

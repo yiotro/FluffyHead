@@ -21,4 +21,8 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+    <style name="activated" parent="AppTheme">
+        <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
+    </style>
+
 </resources>

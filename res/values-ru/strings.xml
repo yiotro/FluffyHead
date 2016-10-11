@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FluffyHead</string>
+
+    <string name="navigation_drawer_open">Открыть панель</string>
+    <string name="navigation_drawer_close">Закрыть панель</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="tasks">Задачи</string>
+    <string name="notes">Заметки</string>
+    <string name="reminders">Напоминания</string>
+    <string name="other">Другое</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О программе</string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Общие</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message
+        history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_about">О программе</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_tasks">TasksActivity</string>
+    <string name="large_text">
+        "Fluffy Head by yiotro.\n\n"
+
+        "Это простое приложение. Я сделал его чтобы попрактиковаться в андроид разработке. "
+        "Ну и просто для себя. \n\n"
+
+        "Email: yiotro93@gmail.com. \n"
+        "2016"
+    </string>
+    <string name="title_activity_about">О программе</string>
+    <string name="title_activity_notes">Заметки</string>
+    <string name="title_activity_reminders">Напоминания</string>
+    <string name="delete">удалить</string>
+    <string name="simple_manager_app">Лень запоминать</string>
+    <string name="fluffy_head">Fluffy Head</string>
+    <string name="cancel">Отмена</string>
+    <string name="new_task">Новая задача</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="add_reminder">Добавить напоминание</string>
+    <string name="edit_note">Изменить заметку</string>
+    <string name="edit">Редактировать</string>
+    <string name="edit_task">Изменить задачу</string>
+    <string name="time">Время</string>
+    <string name="monday_short">Пн</string>
+    <string name="tuesday_short">Вт</string>
+    <string name="wednesday_short">Ср</string>
+    <string name="thursday_short">Чт</string>
+    <string name="friday_short">Пт</string>
+    <string name="saturday_short">Сб</string>
+    <string name="sunday_short">Вс</string>
+    <string name="never">Никогда</string>
+    <string name="edit_reminder">Изменить напоминание</string>
+    <string name="swipe_to_dismiss">Смахни чтобы скрыть</string>
+    <string name="task_list_is_empty">Список задач пуст</string>
+    <string name="note_list_is_empty">Список заметок пуст</string>
+    <string name="reminders_list_is_empty">Список напоминаний пуст</string>
+
+</resources>

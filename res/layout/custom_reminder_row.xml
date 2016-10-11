@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?android:attr/activatedBackgroundIndicator"
+              android:weightSum="1">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/custom_reminder_row_text"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.15"
+            android:layout_margin="10dp"
+            android:textSize="20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10:30"
+            android:id="@+id/rem_row_time"
+            android:layout_below="@+id/custom_reminder_row_text"
+            android:layout_alignLeft="@+id/custom_reminder_row_text"
+            android:layout_alignStart="@+id/custom_reminder_row_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Days"
+            android:id="@+id/rem_row_days"
+            android:layout_below="@+id/custom_reminder_row_text"
+            android:layout_alignRight="@+id/custom_reminder_row_text"
+            android:layout_alignEnd="@+id/custom_reminder_row_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+</RelativeLayout>

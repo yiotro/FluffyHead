@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="yio.tro.fluffyhead">
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,9 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".TasksActivity"
+                android:name=".tasks.TasksActivity"
                 android:label="@string/app_name"
+                android:windowSoftInputMode="stateAlwaysHidden"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -21,30 +24,50 @@
         <activity
                 android:name=".SettingsActivity"
                 android:label="@string/title_activity_settings"
-                android:parentActivityName=".TasksActivity">
+                android:parentActivityName=".tasks.TasksActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".TasksActivity"/>
+                    android:value=".tasks.TasksActivity"/>
         </activity>
         <activity
                 android:name=".AboutActivity"
                 android:label="@string/title_activity_about"
-                android:parentActivityName=".TasksActivity"
+                android:parentActivityName=".tasks.TasksActivity"
                 android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".TasksActivity"/>
+                    android:value=".tasks.TasksActivity"/>
         </activity>
         <activity
-                android:name=".NotesActivity"
+                android:name=".notes.NotesActivity"
                 android:label="@string/title_activity_notes"
+                android:windowSoftInputMode="stateAlwaysHidden"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".RemindersActivity"
+                android:name=".reminders.RemindersActivity"
                 android:label="@string/title_activity_reminders"
+                android:windowSoftInputMode="stateAlwaysHidden"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <receiver android:name=".widget.TasksWidgetProvider">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="yiotro.UPDATE_TASKS"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/task_widget_provider"/>
+        </receiver>
+
+        <service
+                android:name=".widget.TaskWidgetService"
+                android:permission="android.permission.BIND_REMOTEVIEWS">
+        </service>
+        <service android:name=".reminders.ReminderNotificationService"/>
     </application>
 
 </manifest>
